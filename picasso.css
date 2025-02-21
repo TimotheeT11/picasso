@@ -1,0 +1,93 @@
+/* Flex */
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: dodgerblue;
+  height: 250px;
+}
+
+.flex-container > div {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+}
+
+#flex-item-1 {
+  background-color: blue;
+}
+
+#flex-item-2 {
+  background-color: white;
+}
+
+#flex-item-3 {
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container > div {
+    width: 300px;
+  }
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 70px 70px 70px;
+  place-content: center;
+  /* grid-template-rows: 1fr 2fr 1fr; */
+  background-color: cadetblue;
+  height: 300px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Art */
+
+.art {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lavender;
+
+}
+
+.sky {
+  display: flex;
+  background-color: skyblue;
+}
+
+.sun {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  margin: 25px;
+}
+
+.cloud {
+  background-color: gray;
+  height: 100px;
+  width: 1in;
+}
+
+.grass {
+  height: 30px;
+  width: 100%;
+  background-color: green;
+  margin: 10px 0px;
+}
